@@ -11,16 +11,17 @@ public class katoExec_Chapter17 {
 		KatoHanako_Chapter17 hanako = new KatoHanako_Chapter17();
 		
 		//太郎
-		taro.setGivenName("太郎");
-		taro.execlntroduc();
-		
-		//一郎
-		ichiro.setGivenName("一郎");
-		ichiro.execlntroduc();
-		
+		taro.setGivenName();
 		//花子
-		hanako.setGivenName("花子");
-		hanako.execlntroduc();
+		hanako.setGivenName();
+		//一郎
+		ichiro.setGivenName();
+		
+		var katoFamily = new Kato_Chapter17[] {taro, ichiro, hanako};
+		for (var kato: katoFamily) {
+			kato.execlntroduce();
+		}
+		
 		}
 		
 	}

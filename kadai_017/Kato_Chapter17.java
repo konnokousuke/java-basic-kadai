@@ -9,14 +9,17 @@ abstract public class Kato_Chapter17 {
 	
 	//共通の紹介
 	public void commonlntroduce() {
-		System.out.println(familyName); //姓
-		System.out.println(address); //住所
+		System.out.println("名前は" + familyName + givenName + "です"); //姓
+		System.out.println("住所は" + address + "です"); //住所
 	}
 	//個別の紹介(抽象メソッド)
 	abstract public void eachlntroduce(); //個別の紹介
+	abstract public void setGivenName();
 	
 	//紹介を実行
 	public void execlntroduce() {
-		
+		commonlntroduce();
+		eachlntroduce();
+		System.out.println();
 	}
 } 
