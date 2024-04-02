@@ -1,7 +1,7 @@
 package kadai_017;
 
 public class KatoIchiro_Chapter17 extends Kato_Chapter17 {
-	//セッター
+	//名を表すフィールド
 		public void setGivenName() {
 			givenName = "一郎";
 		}
